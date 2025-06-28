@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма регистрации</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Регистрация</h1>
+            
+            <form id="regForm">
+                <div class="input-group">
+                    <input type="text" id="fullName" placeholder=" ">
+                    <label>Ф.И.О.</label>
+                    <div class="error" id="nameError"></div>
+                </div>
+                
+                <div class="input-group">
+                    <input type="date" id="birthDate">
+                    <label class="date-label">Дата рождения</label>
+                    <div class="error" id="dateError"></div>
+                </div>
+                
+                <div class="input-group">
+                    <input type="tel" id="phone" placeholder=" ">
+                    <label>Телефон</label>
+                    <div class="error" id="phoneError"></div>
+                </div>
+                
+                <div class="input-row">
+                    <div class="input-group half">
+                        <input type="date" id="appointmentDate">
+                        <label class="date-label">Дата бронирования</label>
+                        <div class="error" id="appDateError"></div>
+                    </div>
+                    <div class="input-group half">
+                        <input type="time" id="appointmentTime">
+                        <label>Время</label>
+                        <div class="error" id="appTimeError"></div>
+                    </div>
+                </div>
+                
+                <button type="submit">Забронировать</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Контакты: @tyzapentro</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
